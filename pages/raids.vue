@@ -1,15 +1,34 @@
 <template>
-  <v-layout>
-    <v-flex class="text-center">
-      <img src="/v.png" alt="Vuetify.js" class="mb-5" />
-      <blockquote class="blockquote">
-        &#8220;First, solve the problem. Then, write the code.&#8221;
-        <footer>
-          <small>
-            <em>&mdash;John Johnson</em>
-          </small>
-        </footer>
-      </blockquote>
-    </v-flex>
-  </v-layout>
+  <v-row class="mb-6">
+    <v-col class="mb-6" cols="12" md="8">
+      <v-row>
+        <v-col v-for="n in totalItems" :key="n" cols="6" md="4">
+          <v-skeleton-loader
+            class="mx-auto"
+            type="card-heading, card-avatar"
+          ></v-skeleton-loader>
+        </v-col>
+      </v-row>
+    </v-col>
+    <v-col class="mb-6 hidden-sm-and-down" cols="4">
+      <v-row>
+        <v-col>
+          <v-sheet class="pa-6" elevation="2">
+            Filter
+          </v-sheet>
+        </v-col>
+      </v-row>
+    </v-col>
+  </v-row>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      items: [],
+      totalItems: 100,
+    }
+  },
+}
+</script>
