@@ -11,7 +11,7 @@
           <v-skeleton-loader type="image" height="4em" boilerplate="true" />
         </v-col>
       </v-row>
-      <v-row v-for="n in 5" :key="n">
+      <v-row v-for="n in 6" :key="n">
         <v-col cols="12" class="pa-1">
           <v-skeleton-loader
             type="list-item-avatar-three-line"
