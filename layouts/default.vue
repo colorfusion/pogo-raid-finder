@@ -48,7 +48,7 @@
 export default {
   data() {
     return {
-      clipped: false,
+      clipped: true,
       drawer: false,
       fixed: false,
       items: [
@@ -59,7 +59,7 @@ export default {
         },
         {
           icon: 'mdi-account-multiple',
-          title: 'Raids',
+          title: 'Raid Lobby',
           to: '/raids',
         },
         {
