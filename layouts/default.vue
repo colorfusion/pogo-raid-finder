@@ -62,6 +62,11 @@ export default {
           title: 'Raids',
           to: '/raids',
         },
+        {
+          icon: 'mdi-run',
+          title: 'Party Room',
+          to: '/lobby',
+        },
       ],
       miniVariant: false,
       title: 'Pogo Raid Finder',
